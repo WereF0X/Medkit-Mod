@@ -1,0 +1,202 @@
+{
+  "mod_elements": [
+    {
+      "name": "Medkit",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/medkit_mod/models/item/medkit.json",
+          "src/main/java/net/mcreator/medkitmod/item/MedkitItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MedkitRightclicked",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/procedures/MedkitRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Medkitrecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkitrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/medkit_mod/recipes/medkitrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Recipes",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/client/gui/RecipesScreen.java",
+          "src/main/java/net/mcreator/medkitmod/world/inventory/RecipesMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "YOnKeyPressed",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "y_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/procedures/YOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Y",
+      "type": "keybind",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "y",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/network/YMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "MedkitRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/procedures/MedkitRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MedkitLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit_living_entity_is_hit_with_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/medkitmod/procedures/MedkitLivingEntityIsHitWithItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "key.medkit_mod.y": "Y",
+      "item.medkit_mod.medkit": "Medkit",
+      "gui.medkit_mod.recipes.label_recipes": "Recipes"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "medkit_mod",
+    "modName": "Medkit Mod",
+    "version": "1.0.0",
+    "author": "The_WereF0X",
+    "websiteURL": "https://mcreator.net",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "The_WereF0X, Dodonel4",
+    "modElementsPackage": "net.mcreator.medkitmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

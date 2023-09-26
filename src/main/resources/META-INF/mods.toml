@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="medkit_mod"
+version="1.0.0"
+displayName="Medkit Mod"
+credits="The_WereF0X, Dodonel4"
+displayURL="https://mcreator.net"
+authors="The_WereF0X"
+
+[[dependencies.medkit_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
